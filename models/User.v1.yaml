@@ -1,0 +1,17 @@
+title: User
+type: object
+properties:
+  id:
+    type: number
+  firstName:
+    type: string
+  lastName:
+    type: string
+  login:
+    type: string
+x-examples:
+  example-1:
+    id: 12
+    firstName: Anthony
+    lastName: Matignon
+    login: anthony.matignon

@@ -1,0 +1,25 @@
+openapi: 3.0.0
+info:
+  title: Easysystème
+  version: '1.0'
+  description: ''
+servers:
+  - url: 'http://localhost'
+    description: Développement
+paths:
+  /me:
+    get:
+      summary: "Récupérer les informations de l'utilisateur courant"
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: ../models/User.v1.yaml
+              examples: {}
+      operationId: get-me
+      description: "Avec les informations du Token. Cette route permet de récupérer les informations de l'utilisateur comme son nom, prénom."
+components:
+  schemas: {}
